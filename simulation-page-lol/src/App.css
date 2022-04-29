@@ -1,0 +1,27 @@
+:root {
+  --color-bg: #0a0a0c;
+  --color-white: white;
+  --color-bg-header: #111;
+  --color-border-header: rgba(51,51,51,.25);
+  --color-hover-header: rgb(56, 56, 56);
+  --color-bg-seatch-bar: #121212;
+  --color-search-bar: wheat;
+  --color-placeholder: rgba(52,43,32,.85);
+  --color-title-champions: rgb(196, 185, 152);
+  --color-bg-infos: rgba(0, 0, 0, 0.795);
+  --color-name-champion: #937341;
+  --color-location-champion: #c4b998;
+  --color-border-card: #927345;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-color: var(--color-bg);
+  color: var(--color-white);
+  height: auto;
+  width: 100vw;
+}
