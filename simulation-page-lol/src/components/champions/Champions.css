@@ -25,27 +25,35 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   width: 70%;
+  padding: 30px;
 }
 
 .card {
-  background-color: brown;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   width: 20em;
-  height: 25em;
+  height: 30em;
+  border: 1px solid transparent;
+  transition: border 1.5s, transform 1.5s;
 }
 
-/* .img-card {
-  align-items: stretch;
-  display: flex;
-  justify-content: center;
-} */
+.card:hover {
+  border-color: var(--color-border-card);
+  transform: scale(1.1);
+}
 
 .img-card {
+  display: flex;
+  width: 20em;
+  height: 30em;
+}
+
+.img-card img{
   object-fit: cover;
+  width: 100%;
 }
 
 .infos-card {
@@ -56,5 +64,17 @@
   position: absolute;
   text-align: center;
   height: 2cm;
-  width: inherit;
+  width: 20em;
+  gap: 3px;
+  border-top: 1px solid var(--color-border-card);
+}
+
+.infos-card p:nth-child(1) {
+  color: var(--color-name-champion);
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+.infos-card p:nth-child(2) {
+  color: var(--color-location-champion);
 }
