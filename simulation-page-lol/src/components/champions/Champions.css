@@ -38,11 +38,11 @@
   height: 25em;
 }
 
-.img-card {
+/* .img-card {
   align-items: stretch;
   display: flex;
   justify-content: center;
-}
+} */
 
 .img-card {
   object-fit: cover;
